@@ -5,7 +5,7 @@
 //  Copyright (c) 2015 Stefan. All rights reserved.
 //
 // License: MIT License
-// GitHub Repository: 
+// GitHub Repository: https://github.com/stfnjstn/iAdAdMobDemo
 // Tutorial: developerplayground.net
 //
 // Helper class to show iAd and Google AdMob interstitial ads. Default is the iAd.

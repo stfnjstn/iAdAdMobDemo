@@ -13,6 +13,9 @@
 		2CFDB5841B4FF1FB0042ECCA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFDB5831B4FF1FB0042ECCA /* Images.xcassets */; };
 		2CFDB5871B4FF1FB0042ECCA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFDB5851B4FF1FB0042ECCA /* LaunchScreen.xib */; };
 		2CFDB5931B4FF1FB0042ECCA /* iAdAdMobDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFDB5921B4FF1FB0042ECCA /* iAdAdMobDemoTests.swift */; };
+		2CFDB59D1B4FF2E90042ECCA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFDB59C1B4FF2E90042ECCA /* iAd.framework */; };
+		2CFDB59F1B4FF3380042ECCA /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFDB59E1B4FF3380042ECCA /* GoogleMobileAds.framework */; };
+		2CFDB5A11B4FF7B70042ECCA /* AdHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFDB5A01B4FF7B70042ECCA /* AdHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		2CFDB58C1B4FF1FB0042ECCA /* iAdAdMobDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iAdAdMobDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFDB5911B4FF1FB0042ECCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CFDB5921B4FF1FB0042ECCA /* iAdAdMobDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAdAdMobDemoTests.swift; sourceTree = "<group>"; };
+		2CFDB59C1B4FF2E90042ECCA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		2CFDB59E1B4FF3380042ECCA /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		2CFDB5A01B4FF7B70042ECCA /* AdHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFDB59F1B4FF3380042ECCA /* GoogleMobileAds.framework in Frameworks */,
+				2CFDB59D1B4FF2E90042ECCA /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,8 @@
 		2CFDB56E1B4FF1FA0042ECCA = {
 			isa = PBXGroup;
 			children = (
+				2CFDB59E1B4FF3380042ECCA /* GoogleMobileAds.framework */,
+				2CFDB59C1B4FF2E90042ECCA /* iAd.framework */,
 				2CFDB5791B4FF1FB0042ECCA /* iAdAdMobDemo */,
 				2CFDB58F1B4FF1FB0042ECCA /* iAdAdMobDemoTests */,
 				2CFDB5781B4FF1FB0042ECCA /* Products */,
@@ -79,6 +89,7 @@
 			children = (
 				2CFDB57C1B4FF1FB0042ECCA /* AppDelegate.swift */,
 				2CFDB57E1B4FF1FB0042ECCA /* ViewController.swift */,
+				2CFDB5A01B4FF7B70042ECCA /* AdHelper.swift */,
 				2CFDB5801B4FF1FB0042ECCA /* Main.storyboard */,
 				2CFDB5831B4FF1FB0042ECCA /* Images.xcassets */,
 				2CFDB5851B4FF1FB0042ECCA /* LaunchScreen.xib */,
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFDB5A11B4FF7B70042ECCA /* AdHelper.swift in Sources */,
 				2CFDB57F1B4FF1FB0042ECCA /* ViewController.swift in Sources */,
 				2CFDB57D1B4FF1FB0042ECCA /* AppDelegate.swift in Sources */,
 			);
@@ -342,6 +354,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iAdAdMobDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +368,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iAdAdMobDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

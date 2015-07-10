@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var adHelper: AdHelper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        adHelper = AdHelper(presentingViewController: self, googleAdMobKey: "PASTE YOU ADMOB ID HERE", iterationsTillPresentInterstitialAd: 3)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +25,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAd(sender: AnyObject) {
-        
+        adHelper.showAds(self)
     }
 
 }

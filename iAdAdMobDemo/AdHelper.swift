@@ -25,8 +25,8 @@ class AdHelper: NSObject {
     
     
     // Initialize iAd and AdMob interstitials ads
-    init(presentingViewController: UIViewController, googleAdMobKey: String, iterationsTillPresentInerstitialAd: Int) {
-        self.iterationsTillPresentAd = iterationsTillPresentInerstitialAd
+    init(presentingViewController: UIViewController, googleAdMobKey: String, iterationsTillPresentInterstitialAd: Int) {
+        self.iterationsTillPresentAd = iterationsTillPresentInterstitialAd
         self.adMobKey = googleAdMobKey
         self.adMobInterstitial = GADInterstitial(adUnitID: self.adMobKey)
         presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.Manual

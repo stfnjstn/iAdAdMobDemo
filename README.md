@@ -3,13 +3,7 @@
 Combine iAd and AdMob Ads for iOS in SWIFT:
 If you use the interstitial ads provided by Apples iAd frequently, you might have seen that the fill rate is not always 100 percent. One reason could be that there was just not enough time to load the new content. This tutorial shows how to improve the fill rate by requesting a Google AdMob ad in parallel. Depending on the availability, the iAd or the AdMob ad will be shown.
 
-##Sample code related to my blog post:
 http://stefansdevplayground.blogspot.de/2015/07/quick-tip-combine-iad-and-admob-ads-for.html
-
-This tutorial shows how to use iAd and AdMob Ads in the same app for iOS in SWIFT to get a better fill rate.
-
-
-
 
 ##My blogs: 
 http://developerplayground.net
@@ -17,11 +11,12 @@ http://stefansdevplayground.blogspot.de
 
 ##You can download my Apps here: 
 https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8
+
 https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8
 
 My videos are available in my YouTube channel: https://www.youtube.com/channel/UCwC_QHjZ-COEQpLVAjaDyfQ
 
-License
+##License
 This code is published under the MIT licence: http://opensource.org/licenses/MIT
 
 The MIT License (MIT) [OSI Approved License] The MIT License (MIT)

@@ -34,6 +34,22 @@ class AdHelper: NSObject {
     
     // Present the interstitial ads
     func showAds(presentingViewController: UIViewController) {
+
+        // AdMob Cookie handling:
+        // Warning: I'm not a lawyer. You have to decide on your own, if this is sufficient
+        // Google gives more hints on: http://www.cookiechoices.org
+        let adMobTitle = "Cookie usage:"
+        let adMobCookieText = "We use device identifiers to personalise content and ads, to provide social media features and to analyse our traffic. We also share such identifiers and other information from your device with our social media, advertising and analytics partners."
+        
+        let userDefaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        if !userDefaults.boolForKey("termsAccepted") {
+            var alert = UIAlertController(title: adMobTitle, message: adMobCookieText, preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default)  { _ in
+                userDefaults.setBool(true, forKey: "termsAccepted")
+                })
+            presentingViewController.presentViewController(alert, animated: true, completion: nil)
+        }
         
         // Check if ad should be shown
         counter++

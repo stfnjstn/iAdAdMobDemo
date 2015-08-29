@@ -12,6 +12,7 @@ http://stefansdevplayground.blogspot.de/2015/07/quick-tip-combine-iad-and-admob-
 
 ##My blogs: 
 http://developerplayground.net
+
 http://stefansdevplayground.blogspot.de
 
 ##You can download my Apps here: 

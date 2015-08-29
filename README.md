@@ -8,7 +8,12 @@ As a prerequisite you need to register for AdMob and iAd. Assign your AdMobKey t
 
 private var adMobKey = "ENTER YOUR KEY HERE"
 
+
+## Tutorial
 http://stefansdevplayground.blogspot.de/2015/07/quick-tip-combine-iad-and-admob-ads-for.html
+
+## Changes for the new Google AdMob / Adsense Cookie Policy
+http://stefansdevplayground.blogspot.de/2015/08/GoogleAdMobPolicy.html
 
 ##My blogs: 
 http://developerplayground.net
